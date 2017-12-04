@@ -1,22 +1,26 @@
 import React, {Component} from 'react'
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 class BootstrapNavBar extends Component{
   render(){
     return(
-		<nav className="navbar navbar-default navbar-fixed-top">
-		  <div className="container-fluid">
-		    <div className="navbar-header">
-		      <a className="navbar-brand" href="#">WebSiteName</a>
-		    </div>
-		    <ul className="nav navbar-nav">
-		    	<li><a href="/">Home</a></li>
-		      	<li><a href="/one">One</a></li>
-		      	<li><a href="/two">Two</a></li>
-		      	<li><a href="/three">Three</a></li>
-		      	<li><a href="/four">Four</a></li>
-		    </ul>
-		  </div>
-		</nav>    
+      <Router>
+    		<nav className="navbar navbar-default navbar-fixed-top">
+    		  <div className="container-fluid">
+    		    <div className="navbar-header">
+    		      <a className="navbar-brand" href="#">Atlanta, GA</a>
+    		    </div>
+    		    <ul className="nav navbar-nav">
+    		    	<li><Link to="/">Home</Link></li>
+    		      	<li><Link to="/About">About</Link></li>
+                <li><Link to="/two">Two</Link></li>
+                <li><Link to="/three">Three</Link></li>
+                <li><Link to="/four">Four</Link></li>
+
+    		    </ul>
+    		  </div>
+    		</nav>
+      </Router>
 	)
   }
 }

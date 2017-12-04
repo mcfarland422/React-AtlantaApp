@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import jquery from 'jquery';
 
 class About extends Component {
 	constructor(props) {
@@ -8,7 +9,7 @@ class About extends Component {
 			temp: "",
 			temp_min: "",
 			temp_max: "",
-			desc: ""			
+			desc: ""
 		}
 	}
 
@@ -32,4 +33,4 @@ class About extends Component {
 	}
 }
 
-export default About;
+export default Atlanta;
